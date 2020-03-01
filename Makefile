@@ -5,17 +5,8 @@ SWIFT_RESOURCE_SCRIPT = ./rsrc2swift.sh
 PACKAGE_NAME=HighlightJS
 
 HighlightJS_RESOURCE_FILES = \
-	$(wildcard Upstream/*.min.css) \
-	$(wildcard Upstream/*.min.js)  \
-	$(wildcard Upstream/components/*.min.css) \
-	$(wildcard Upstream/components/*.min.js)  \
-	$(wildcard Upstream/themes/default/assets/fonts/*.eot)   \
-	$(wildcard Upstream/themes/default/assets/fonts/*.svg)   \
-	$(wildcard Upstream/themes/default/assets/fonts/*.ttf)   \
-	$(wildcard Upstream/themes/default/assets/fonts/*.otf)   \
-	$(wildcard Upstream/themes/default/assets/fonts/*.woff)  \
-	$(wildcard Upstream/themes/default/assets/fonts/*.woff2) \
-	$(wildcard Upstream/themes/default/assets/images/*.png)  \
+	$(wildcard Upstream/styles/default.min.css) \
+	$(wildcard Upstream/highlight.min.js)
 
 all : package-as-swift
 	swift build
